@@ -1,9 +1,6 @@
 const qrcode = require('qrcode-terminal');
 const { Client, LocalAuth } = require('whatsapp-web.js');
-const { MongoStore } = require('wwebjs-mongo');
-const mongoose = require('mongoose');
 const axios = require('axios');
-// http://api.brainshop.ai/get?bid=177847&key=oxQoxF7odL8vzb6U&uid=[uid]&msg=[msg]
 
 // Load the session data
 const client = new Client({
@@ -21,17 +18,37 @@ client.on('ready', () => {
     console.log('Client is ready!');
 });
 
-client.on('message', msg => {
-    axios.get('http://api.brainshop.ai/get?bid=177847&key=oxQoxF7odL8vzb6U', {
-        params: {
-            uid: msg.from,
-            msg: msg.body
+client.on('message', async msg => {
+    try {
+        const chats = await client.getChats();
+        const isGroupChat = await chats.some(chat => {
+            return chat.id._serialized == msg.id.remote ? chat.isGroup : false
+        });
+        if (isGroupChat) {
+            if (msg.body.startsWith('/chat')) {
+                const chatMessage = msg.body.substring('/chat'.length).trim();
+                const response = await axios.get('http://api.brainshop.ai/get', {
+                    params: {
+                        bid: 177847,
+                        key: 'oxQoxF7odL8vzb6U',
+                        uid: msg.from,
+                        msg: chatMessage
+                    }
+                });
+                msg.reply(response.data.cnt);
+            }
+        } else {
+            const response = await axios.get('http://api.brainshop.ai/get', {
+                params: {
+                    bid: 177847,
+                    key: 'oxQoxF7odL8vzb6U',
+                    uid: msg.from,
+                    msg: msg.body
+                }
+            });
+            msg.reply(response.data.cnt);
         }
-    })
-        .then(function (response) {
-            msg.reply(response.data.cnt)
-        })
-        .catch(function (error) {
-            console.log(error);
-        })
+    } catch (error) {
+        console.error('Error:', error);
+    }
 });
