@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "axios": "^1.5.0",
+    "mongoose": "^7.5.1",
+    "nodemon": "^3.0.1",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "https://github.com/Julzk/whatsapp-web.js/tarball/jkr_hotfix_7",
+    "wwebjs-mongo": "^1.1.0"
+  },
+  "name": "blindz-free-version-1.0",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
