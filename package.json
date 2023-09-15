@@ -3,8 +3,9 @@
     "axios": "^1.5.0",
     "mongoose": "^7.5.1",
     "nodemon": "^3.0.1",
+    "puppeteer": "^21.2.1",
     "qrcode-terminal": "^0.12.0",
-    "whatsapp-web.js": "https://github.com/Julzk/whatsapp-web.js/tarball/jkr_hotfix_7",
+    "whatsapp-web.js": "https://github.com/Julzk/whatsapp-web.js/tarball/jkr_ho>
     "wwebjs-mongo": "^1.1.0"
   },
   "name": "blindz-free-version-1.0",
