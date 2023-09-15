@@ -1,38 +1,14 @@
-2023/09/15-19:18:51.161 fb03 Creating DB /Users/apple/Downloads/Blindz-Free-Version-1.0/.wwebjs_auth/session-client-one/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb since it was missing.
-2023/09/15-19:18:51.228 fb03 Reusing MANIFEST /Users/apple/Downloads/Blindz-Free-Version-1.0/.wwebjs_auth/session-client-one/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/09/15-19:18:51.392 a503 Level-0 table #5: started
-2023/09/15-19:18:51.436 a503 Level-0 table #5: 7472 bytes OK
-2023/09/15-19:18:51.480 a503 Delete type=0 #3
-2023/09/15-19:18:51.480 a503 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
-2023/09/15-19:18:52.607 fb03 Level-0 table #7: started
-2023/09/15-19:18:52.630 fb03 Level-0 table #7: 18251 bytes OK
-2023/09/15-19:18:52.659 fb03 Delete type=0 #4
-2023/09/15-19:18:52.660 fb03 Manual compaction at level-0 from '\x00\x06\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at (end)
-2023/09/15-19:19:23.636 f707 Level-0 table #9: started
-2023/09/15-19:19:23.674 f707 Level-0 table #9: 1106466 bytes OK
-2023/09/15-19:19:23.717 f707 Delete type=0 #6
-2023/09/15-19:19:26.110 13203 Compacting 1@0 + 1@1 files
-2023/09/15-19:19:26.162 13203 Generated table #10@0: 25987 keys, 741691 bytes
-2023/09/15-19:19:26.162 13203 Compacted 1@0 + 1@1 files => 741691 bytes
-2023/09/15-19:19:26.204 13203 compacted to: files[ 0 1 1 0 0 0 0 ]
-2023/09/15-19:19:29.024 f707 Level-0 table #12: started
-2023/09/15-19:19:29.064 f707 Level-0 table #12: 1000046 bytes OK
-2023/09/15-19:19:29.127 f707 Delete type=2 #7
-2023/09/15-19:19:29.146 f707 Delete type=2 #9
-2023/09/15-19:19:29.147 f707 Delete type=0 #8
-2023/09/15-19:19:29.412 f403 Compacting 1@0 + 1@1 files
-2023/09/15-19:19:29.487 f403 Generated table #13@0: 52163 keys, 1443522 bytes
-2023/09/15-19:19:29.487 f403 Compacted 1@0 + 1@1 files => 1443522 bytes
-2023/09/15-19:19:29.529 f403 compacted to: files[ 0 1 1 0 0 0 0 ]
-2023/09/15-19:19:29.530 f403 Delete type=2 #12
-2023/09/15-19:19:29.530 f403 Delete type=2 #10
-2023/09/15-19:19:31.181 13203 Level-0 table #15: started
-2023/09/15-19:19:31.222 13203 Level-0 table #15: 1223064 bytes OK
-2023/09/15-19:19:31.268 13203 Delete type=0 #11
-2023/09/15-19:19:31.273 13203 Compacting 1@0 + 1@1 files
-2023/09/15-19:19:31.360 13203 Generated table #16@0: 61047 keys, 2243630 bytes
-2023/09/15-19:19:31.386 13203 Generated table #17@0: 3516 keys, 70696 bytes
-2023/09/15-19:19:31.386 13203 Compacted 1@0 + 1@1 files => 2314326 bytes
-2023/09/15-19:19:31.429 13203 compacted to: files[ 0 2 1 0 0 0 0 ]
-2023/09/15-19:19:31.430 13203 Delete type=2 #15
-2023/09/15-19:19:31.430 13203 Delete type=2 #13
+2023/09/15-20:01:31.628 ad03 Reusing MANIFEST /Users/apple/Downloads/Blindz-Free-Version-1.0/.wwebjs_auth/session-client-one/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/09/15-20:01:31.628 ad03 Recovering log #67
+2023/09/15-20:01:31.712 ad03 Reusing old log /Users/apple/Downloads/Blindz-Free-Version-1.0/.wwebjs_auth/session-client-one/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000067.log 
+2023/09/15-20:02:30.109 8403 Level-0 table #73: started
+2023/09/15-20:02:30.149 8403 Level-0 table #73: 1222321 bytes OK
+2023/09/15-20:02:30.193 8403 Delete type=0 #67
+2023/09/15-20:02:30.471 fa03 Compacting 1@1 + 2@2 files
+2023/09/15-20:02:30.553 fa03 Generated table #74@1: 29890 keys, 2199082 bytes
+2023/09/15-20:02:30.611 fa03 Generated table #75@1: 29537 keys, 990609 bytes
+2023/09/15-20:02:30.612 fa03 Compacted 1@1 + 2@2 files => 3189691 bytes
+2023/09/15-20:02:30.655 fa03 compacted to: files[ 0 0 2 0 0 0 0 ]
+2023/09/15-20:02:30.655 fa03 Delete type=2 #70
+2023/09/15-20:02:30.655 fa03 Delete type=2 #73
+2023/09/15-20:02:30.655 fa03 Delete type=2 #69

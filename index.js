@@ -37,12 +37,12 @@ client.on('message', async msg => {
                 });
                 msg.reply(response.data.cnt);
             }
-        } else { 
+        } else {
             const response = await axios.get('http://api.brainshop.ai/get', {
                 params: {
                     bid: 177847,
                     key: 'oxQoxF7odL8vzb6U',
-                    uid: msg.author,
+                    uid: msg.from,
                     msg: msg.body
                 }
             });
