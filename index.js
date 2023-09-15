@@ -31,7 +31,7 @@ client.on('message', async msg => {
                     params: {
                         bid: 177847,
                         key: 'oxQoxF7odL8vzb6U',
-                        uid: msg.from,
+                        uid: msg.author,
                         msg: chatMessage
                     }
                 });
@@ -42,7 +42,7 @@ client.on('message', async msg => {
                 params: {
                     bid: 177847,
                     key: 'oxQoxF7odL8vzb6U',
-                    uid: msg.from,
+                    uid: msg.author,
                     msg: msg.body
                 }
             });
